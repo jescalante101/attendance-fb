@@ -1,0 +1,13 @@
+C:\fibrafil_attendance\App_Attendance_Fibra\FibraAttendance\FibraAttendance.Infrastructure\bin\Debug\net8.0\FibraAttendance.Infrastructure.deps.json
+C:\fibrafil_attendance\App_Attendance_Fibra\FibraAttendance\FibraAttendance.Infrastructure\bin\Debug\net8.0\FibraAttendance.Infrastructure.dll
+C:\fibrafil_attendance\App_Attendance_Fibra\FibraAttendance\FibraAttendance.Infrastructure\bin\Debug\net8.0\FibraAttendance.Infrastructure.pdb
+C:\fibrafil_attendance\App_Attendance_Fibra\FibraAttendance\FibraAttendance.Infrastructure\obj\Debug\net8.0\Interop.zkemkeeper.dll
+C:\fibrafil_attendance\App_Attendance_Fibra\FibraAttendance\FibraAttendance.Infrastructure\obj\Debug\net8.0\FibraAttendance.Infrastructure.csproj.ResolveComReference.cache
+C:\fibrafil_attendance\App_Attendance_Fibra\FibraAttendance\FibraAttendance.Infrastructure\obj\Debug\net8.0\FibraAttendance.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\fibrafil_attendance\App_Attendance_Fibra\FibraAttendance\FibraAttendance.Infrastructure\obj\Debug\net8.0\FibraAttendance.Infrastructure.AssemblyInfoInputs.cache
+C:\fibrafil_attendance\App_Attendance_Fibra\FibraAttendance\FibraAttendance.Infrastructure\obj\Debug\net8.0\FibraAttendance.Infrastructure.AssemblyInfo.cs
+C:\fibrafil_attendance\App_Attendance_Fibra\FibraAttendance\FibraAttendance.Infrastructure\obj\Debug\net8.0\FibraAttendance.Infrastructure.csproj.CoreCompileInputs.cache
+C:\fibrafil_attendance\App_Attendance_Fibra\FibraAttendance\FibraAttendance.Infrastructure\obj\Debug\net8.0\FibraAttendance.Infrastructure.dll
+C:\fibrafil_attendance\App_Attendance_Fibra\FibraAttendance\FibraAttendance.Infrastructure\obj\Debug\net8.0\refint\FibraAttendance.Infrastructure.dll
+C:\fibrafil_attendance\App_Attendance_Fibra\FibraAttendance\FibraAttendance.Infrastructure\obj\Debug\net8.0\FibraAttendance.Infrastructure.pdb
+C:\fibrafil_attendance\App_Attendance_Fibra\FibraAttendance\FibraAttendance.Infrastructure\obj\Debug\net8.0\ref\FibraAttendance.Infrastructure.dll
