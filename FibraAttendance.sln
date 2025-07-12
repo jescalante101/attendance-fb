@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibraAttendance", "FibraAtt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibraAttendance.Infrastructure", "FibraAttendance.Infrastructure\FibraAttendance.Infrastructure.csproj", "{43A8983A-B229-407D-B82F-9D29ACAFF66E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{AC03ECCE-0CD7-425B-85BC-31686D1D7839}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{43A8983A-B229-407D-B82F-9D29ACAFF66E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43A8983A-B229-407D-B82F-9D29ACAFF66E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43A8983A-B229-407D-B82F-9D29ACAFF66E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC03ECCE-0CD7-425B-85BC-31686D1D7839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC03ECCE-0CD7-425B-85BC-31686D1D7839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC03ECCE-0CD7-425B-85BC-31686D1D7839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC03ECCE-0CD7-425B-85BC-31686D1D7839}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

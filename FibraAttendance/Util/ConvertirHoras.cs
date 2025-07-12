@@ -36,37 +36,53 @@ namespace FibraAttendance.Util
             return dateTimeObjeto;
         }
 
-        public static double? ObtenerDiferenciaEnMinutos(string horaInicioString, string horaFinString)
+         public static DateTime ParsearFechaHora(string fechaHora)
         {
-            string formato = "HH:mm:ss";
-            DateTime horaInicio;
-            DateTime horaFin;
+            // Formatos soportados
+            string[] formatos = {
+            "yyyy-MM-dd HH:mm:ss",
+            "yyyy-MM-dd HH:mm",
+            "dd/MM/yyyy HH:mm:ss",
+            "dd/MM/yyyy HH:mm",
+            "yyyy-MM-ddTHH:mm:ss",  // Formato ISO (datetime-local de HTML)
+            "yyyy-MM-ddTHH:mm"
+        };
 
-            // Intentar parsear la hora de inicio
-            if (!DateTime.TryParseExact(horaInicioString, formato, CultureInfo.InvariantCulture, DateTimeStyles.None, out horaInicio))
+            foreach (string formato in formatos)
             {
-                Console.WriteLine($"Error: El formato de '{horaInicioString}' no es válido o la hora es incorrecta.");
-                return null;
+                if (DateTime.TryParseExact(fechaHora, formato, CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime resultado))
+                {
+                    return resultado;
+                }
             }
 
-            // Intentar parsear la hora de fin
-            if (!DateTime.TryParseExact(horaFinString, formato, CultureInfo.InvariantCulture, DateTimeStyles.None, out horaFin))
+            // Si ningún formato específico funciona, intentar parseo automático
+            if (DateTime.TryParse(fechaHora, out DateTime resultadoAuto))
             {
-                Console.WriteLine($"Error: El formato de '{horaFinString}' no es válido o la hora es incorrecta.");
-                return null;
+                return resultadoAuto;
             }
 
-            // Si la hora de fin es menor que la de inicio, asumimos que es al día siguiente
-            if (horaFin < horaInicio)
-            {
-                horaFin = horaFin.AddDays(1);
-            }
+            throw new ArgumentException($"Formato de fecha/hora inválido: {fechaHora}");
+        }
 
-            // Calcular la diferencia de tiempo
-            TimeSpan diferencia = horaFin - horaInicio;
+        public static int ObtenerDiferenciaEnMinutos(string horaInicioString, string horaFinString)
+        {
+            string[] formatos = {
+                "yyyy-MM-dd HH:mm:ss",
+                "yyyy-MM-dd HH:mm",
+                "dd/MM/yyyy HH:mm:ss",
+                "dd/MM/yyyy HH:mm",
+                "yyyy-MM-ddTHH:mm:ss",
+                "yyyy-MM-ddTHH:mm"
+            };
 
-            // Retornar la diferencia total en minutos
-            return diferencia.TotalMinutes;
+            if (!DateTime.TryParseExact(horaInicioString, formatos, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out DateTime inicio))
+                throw new ArgumentException("El formato de fechaHoraInicio no es válido.");
+
+            if (!DateTime.TryParseExact(horaFinString, formatos, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out DateTime fin))
+                throw new ArgumentException("El formato de fechaHoraFin no es válido.");
+
+            return (int)(fin - inicio).TotalMinutes;
         }
 
     }

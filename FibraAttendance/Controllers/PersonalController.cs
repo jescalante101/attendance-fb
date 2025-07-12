@@ -96,14 +96,19 @@ namespace FibraAttendance.Controllers
         }
 
 
-        /********* Empleados  ***********/
         [HttpGet("organizacion/listarEmpleados")]
-        public async Task<ActionResult<IEnumerable<PersonnelEmployee>>> getListEmployees([FromQuery] int page = 1, [FromQuery] int pageSize = 15)
+        public async Task<ActionResult<IEnumerable<PersonnelEmployee>>> getListEmployees(
+         [FromQuery] int page = 1,
+         [FromQuery] int pageSize = 15)
         {
-            var lstEmployee =  _context.PersonnelEmployees.
-                Select(emp=>new
+            if (page < 1 || pageSize < 1)
+                return BadRequest("Parámetros de paginación inválidos.");
+
+            var query = _context.PersonnelEmployees
+                .AsNoTracking()
+                .Select(emp => new
                 {
-                    id=emp.Id,
+                    emp.Id,
                     emp.CreateTime,
                     emp.CreateUser,
                     emp.ChangeTime,
@@ -116,7 +121,8 @@ namespace FibraAttendance.Controllers
                     emp.Passport,
                     emp.DriverLicenseAutomobile,
                     emp.DriverLicenseMotorcycle,
-                    emp.Photo,
+                    // El campo Photo es pesado, omítelo si no lo necesitas en el listado general
+                    // emp.Photo,
                     emp.DevPrivilege,
                     emp.CardNo,
                     emp.AccGroup,
@@ -127,32 +133,35 @@ namespace FibraAttendance.Controllers
                     emp.Mobile,
                     emp.HireDate,
                     emp.Email,
-                    emp.Department.DeptName,
-                    emp.Position.PositionName,
-                    estadoApp=emp.AppStatus,
-                    area = emp.PersonnelEmployeeAreas.Select(a => new
+                    DeptName = emp.Department.DeptName,
+                    PositionName = emp.Position.PositionName,
+                    estadoApp = emp.AppStatus,
+                    area = emp.PersonnelEmployeeAreas
+                        .Select(a => new
                         {
                             a.Area.AreaName,
                             a.Area.AreaCode
-                        }
-                     )
-                }
-                )
-                .Skip((page-1)*pageSize)
-                .Take(pageSize)
-                .ToList();
+                        })
+                });
 
-            var totalRecords = await _context.PersonnelEmployees.CountAsync();
+            var totalRecords = await query.CountAsync();
+
+            var empleadosPaginados = await query
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
 
             return Ok(new
             {
-                data = lstEmployee,
+                data = empleadosPaginados,
                 page,
                 pageSize,
                 totalRecords,
                 totalPages = (int)Math.Ceiling((double)totalRecords / pageSize)
             });
         }
+
+
 
         [HttpGet("organizacion/listarCeses")]
         public async Task<ActionResult<IEnumerable<PersonnelResign>>> getPersonnelResign()

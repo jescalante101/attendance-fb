@@ -1,5 +1,944 @@
 [
   {
+    "ContainingType": "FibraAttendance.Controllers.AppUserController.AppUserController",
+    "Method": "GetAll",
+    "RelativePath": "api/AppUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Entities.Entity.ScireAttendance.AppUser, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.AppUserController.AppUserController",
+    "Method": "Create",
+    "RelativePath": "api/AppUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appUser",
+        "Type": "Entities.Entity.ScireAttendance.AppUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Object",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 409
+      }
+    ]
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.AppUserController.AppUserController",
+    "Method": "GetById",
+    "RelativePath": "api/AppUser/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entities.Entity.ScireAttendance.AppUser",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.AppUserController.AppUserController",
+    "Method": "Update",
+    "RelativePath": "api/AppUser/{userId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedEntity",
+        "Type": "Entities.Entity.ScireAttendance.AppUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.AppUserController.AppUserController",
+    "Method": "Delete",
+    "RelativePath": "api/AppUser/{userId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.AppUserController.AppUserController",
+    "Method": "GetSedesYAreasDeUsuario",
+    "RelativePath": "api/AppUser/{userId}/sedes-areas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.AppUserSiteController.AppUserSiteController",
+    "Method": "GetAll",
+    "RelativePath": "api/AppUserSite",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Entities.Entity.ScireAttendance.AppUserSite, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.AppUserSiteController.AppUserSiteController",
+    "Method": "Create",
+    "RelativePath": "api/AppUserSite",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appUserSite",
+        "Type": "Entities.Entity.ScireAttendance.AppUserSite",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Object",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 409
+      }
+    ]
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.AppUserSiteController.AppUserSiteController",
+    "Method": "GetById",
+    "RelativePath": "api/AppUserSite/{userId}/{siteId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "siteId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entities.Entity.ScireAttendance.AppUserSite",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.AppUserSiteController.AppUserSiteController",
+    "Method": "Update",
+    "RelativePath": "api/AppUserSite/{userId}/{siteId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "siteId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedEntity",
+        "Type": "Entities.Entity.ScireAttendance.AppUserSite",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.AppUserSiteController.AppUserSiteController",
+    "Method": "Delete",
+    "RelativePath": "api/AppUserSite/{userId}/{siteId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "siteId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.EmployeeScheduleAssignmentController",
+    "Method": "DeleteAssignment",
+    "RelativePath": "api/employee-schedule-assignment/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entities.DTO.ResultadoConsulta\u00601[[Entities.DTO.EmployeeScheduleAssignmentDTO, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.EmployeeScheduleAssignmentController",
+    "Method": "GetAssignmentById",
+    "RelativePath": "api/employee-schedule-assignment/get-by-id/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entities.DTO.ResultadoConsulta\u00601[[Entities.DTO.EmployeeScheduleAssignmentDTO, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.EmployeeScheduleAssignmentController",
+    "Method": "GetAssignmentById",
+    "RelativePath": "api/employee-schedule-assignment/get-by-nrodoc/{nroDoc}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nroDoc",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entities.DTO.ResultadoConsulta\u00601[[Entities.DTO.EmployeeScheduleAssignmentDTO, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.EmployeeScheduleAssignmentController",
+    "Method": "GetEmployeeSchedules",
+    "RelativePath": "api/employee-schedule-assignment/get-horaio-by-doc/{nroDoc}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nroDoc",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.EmployeeScheduleAssignmentController",
+    "Method": "InsertAssignment",
+    "RelativePath": "api/employee-schedule-assignment/insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "models",
+        "Type": "System.Collections.Generic.List\u00601[[Entities.Entity.EmployeeScheduleAssignment, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entities.DTO.ResultadoConsulta\u00601[[Entities.DTO.EmployeeScheduleAssignmentDTO, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.EmployeeScheduleAssignmentController",
+    "Method": "Search",
+    "RelativePath": "api/employee-schedule-assignment/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchText",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "startDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entities.DTO.ResultadoConsulta\u00601[[Entities.DTO.EmployeeScheduleAssignmentDTO, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.EmployeeScheduleAssignmentController",
+    "Method": "UpdateAssignment",
+    "RelativePath": "api/employee-schedule-assignment/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "Entities.Entity.EmployeeScheduleAssignment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entities.DTO.ResultadoConsulta\u00601[[Entities.DTO.EmployeeScheduleAssignmentDTO, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.ShiftController.ShiftController",
+    "Method": "getAttShift",
+    "RelativePath": "api/Shift/lstShifts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[FibraAttendance.Models.AttAttshift, FibraAttendance, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.ShiftController.ShiftController",
+    "Method": "NuevoShift",
+    "RelativePath": "api/Shift/nuevoShift",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "FibraAttendance.DTOs.ShiftCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.ShiftController.ShiftController",
+    "Method": "GetShiftById",
+    "RelativePath": "api/Shift/shiftPorId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.SiteAreaController.SiteAreaCostCenterController",
+    "Method": "GetAll",
+    "RelativePath": "api/SiteAreaCostCenter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Entities.Entity.ScireAttendance.SiteAreaCostCenter, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.SiteAreaController.SiteAreaCostCenterController",
+    "Method": "Create",
+    "RelativePath": "api/SiteAreaCostCenter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "siteArea",
+        "Type": "Entities.Entity.ScireAttendance.SiteAreaCostCenter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Object",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 409
+      }
+    ]
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.SiteAreaController.SiteAreaCostCenterController",
+    "Method": "GetById",
+    "RelativePath": "api/SiteAreaCostCenter/{siteId}/{areaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "siteId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "areaId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entities.Entity.ScireAttendance.SiteAreaCostCenter",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.SiteAreaController.SiteAreaCostCenterController",
+    "Method": "Update",
+    "RelativePath": "api/SiteAreaCostCenter/{siteId}/{areaId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "siteId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "areaId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedEntity",
+        "Type": "Entities.Entity.ScireAttendance.SiteAreaCostCenter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.SiteAreaController.SiteAreaCostCenterController",
+    "Method": "Delete",
+    "RelativePath": "api/SiteAreaCostCenter/{siteId}/{areaId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "siteId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "areaId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.SiteCostCenterController.SiteCostCenterController",
+    "Method": "GetAll",
+    "RelativePath": "api/SiteCostCenter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Entities.Entity.ScireAttendance.SiteCostCenter, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.SiteCostCenterController.SiteCostCenterController",
+    "Method": "Create",
+    "RelativePath": "api/SiteCostCenter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "siteCostCenter",
+        "Type": "Entities.Entity.ScireAttendance.SiteCostCenter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Object",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 409
+      }
+    ]
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.SiteCostCenterController.SiteCostCenterController",
+    "Method": "GetById",
+    "RelativePath": "api/SiteCostCenter/{siteId}/{costCenterId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "siteId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "costCenterId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entities.Entity.ScireAttendance.SiteCostCenter",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.SiteCostCenterController.SiteCostCenterController",
+    "Method": "Update",
+    "RelativePath": "api/SiteCostCenter/{siteId}/{costCenterId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "siteId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "costCenterId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedEntity",
+        "Type": "Entities.Entity.ScireAttendance.SiteCostCenter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.SiteCostCenterController.SiteCostCenterController",
+    "Method": "Delete",
+    "RelativePath": "api/SiteCostCenter/{siteId}/{costCenterId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "siteId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "costCenterId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.AttendanceController",
+    "Method": "ActualizarDescanso",
+    "RelativePath": "Attendance/actualizarDescanso",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "descansoInfo",
+        "Type": "FibraAttendance.DTOs.DescansoInfoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FibraAttendance.DTOs.DescansoInfoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.AttendanceController",
+    "Method": "ActualizarHorario",
+    "RelativePath": "Attendance/actualizarHorario",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "attTimeinterval",
+        "Type": "FibraAttendance.DTOs.HorarioInfoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FibraAttendance.Models.AttTimeinterval",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.AttendanceController",
+    "Method": "getAttBreakTimeById",
+    "RelativePath": "Attendance/descansoPorId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FibraAttendance.DTOs.DescansoInfoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.AttendanceController",
+    "Method": "EliminarDescanso",
+    "RelativePath": "Attendance/eliminarDescanso/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FibraAttendance.Controllers.AttendanceController",
+    "Method": "EliminarHorario",
+    "RelativePath": "Attendance/eliminarHorario/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "FibraAttendance.Controllers.AttendanceController",
     "Method": "findById",
     "RelativePath": "Attendance/horarioPorId/{id}",
@@ -120,26 +1059,21 @@
   },
   {
     "ContainingType": "FibraAttendance.Controllers.AttendanceController",
-    "Method": "getAttShift",
-    "RelativePath": "Attendance/lstShifts",
-    "HttpMethod": "GET",
+    "Method": "nuevoDescanso",
+    "RelativePath": "Attendance/nuevoDescanso",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "page",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "pageSize",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "descansoInfo",
+        "Type": "FibraAttendance.DTOs.DescansoInfoDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[FibraAttendance.Models.AttAttshift, FibraAttendance, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "FibraAttendance.DTOs.DescansoInfoDto",
         "MediaTypes": [
           "text/plain",
           "application/json",

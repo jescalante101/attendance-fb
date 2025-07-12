@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using Entities.Entity;
+using Entities.Entity.ScireAttendance;
 using FibraAttendance.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
@@ -19,6 +21,17 @@ public partial class ApplicationDbContext : DbContext
        
     }
 
+    // PROPRIETARY SQL TABLES
+    //public DbSet<ActiveEmployeeEntity> ActiveEmployees { get; set; }
+    public DbSet<EmployeeScheduleAssignment> EmployeeScheduleAssignments { get; set; }
+    public DbSet<SiteCostCenter> SiteCostCenters { get; set; }
+    public DbSet<SiteAreaCostCenter> SiteAreas { get; set; }
+    public DbSet<AppUser> AppUsers { get; set; }
+    public DbSet<AppUserSite> AppUserSites { get; set; }
+    //
+
+
+    // ZKTECO TABLES 
     public virtual DbSet<AccAcccombination> AccAcccombinations { get; set; }
 
     public virtual DbSet<AccAccgroup> AccAccgroups { get; set; }
@@ -307,7 +320,7 @@ public partial class ApplicationDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=192.168.20.10;Database=zk_bioti_TEST_12_05_25;User Id=jescalante;Password=Fibra76095492;Encrypt=False;TrustServerCertificate=True;");
+        optionsBuilder.UseSqlServer("Server=192.168.20.10;Database=ATTENDANCE;User Id=jescalante;Password=Fibra76095492;Encrypt=False;TrustServerCertificate=True;");
         //optionsBuilder.AddInterceptors(new QueryLogger(this.GetService<ILogger<QueryLogger>>()));
     }
 //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
@@ -315,6 +328,25 @@ public partial class ApplicationDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+
+        // TABLAS PROPIAS
+        modelBuilder.Entity<EmployeeScheduleAssignment>()
+        .ToTable("EmployeeScheduleAssignment")
+        .HasKey(e => e.AssignmentId);
+
+        // Clave primaria compuesta para SiteArea
+        modelBuilder.Entity<SiteAreaCostCenter>()
+            .HasKey(e => new { e.SiteId, e.AreaId });
+
+        // Clave primaria compuesta para SiteCostCenter
+        modelBuilder.Entity<SiteCostCenter>()
+            .HasKey(e => new { e.SiteId, e.CostCenterId });
+
+        // (Ejemplo previo) Clave primaria compuesta para AppUserSite
+        modelBuilder.Entity<AppUserSite>()
+            .HasKey(e => new { e.UserId, e.SiteId });
+
+        // ZKTECO
         modelBuilder.Entity<AccAcccombination>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__acc_accc__3213E83FB0C03B48");

@@ -80,7 +80,24 @@ namespace FibraAttendance.Mappers
                 .ForMember(dest => dest.BasadoM, opt => opt.MapFrom(src => src.MultiplePunch))
                 ;
 
-            
+            CreateMap<AttBreaktime, DescansoInfoDto>()
+                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id))
+                .ForMember(dest => dest.Alias, opt => opt.MapFrom(src => src.Alias))
+                .ForMember(dest=>dest.PeriodStart, opt => opt.MapFrom(src => ConvertirHoras.ExtraerHoras(src.PeriodStart)))
+                .ForMember(dest => dest.Duration, opt => opt.MapFrom(src => src.Duration))
+                .ForMember(dest => dest.FuncKey, opt => opt.MapFrom(src => src.FuncKey))
+                .ForMember(dest => dest.AvailableInterval, opt => opt.MapFrom(src => src.AvailableInterval))
+                .ForMember(dest => dest.AvailableIntervalType, opt => opt.MapFrom(src => src.AvailableIntervalType))
+                .ForMember(dest => dest.MultiplePunch, opt => opt.MapFrom(src => src.MultiplePunch))
+                .ForMember(dest => dest.CalcType, opt => opt.MapFrom(src => src.CalcType))
+                .ForMember(dest => dest.MinimumDuration, opt => opt.MapFrom(src => src.MinimumDuration))
+                .ForMember(dest=>dest.EarlyIn, opt => opt.MapFrom(src => src.EarlyIn))
+                .ForMember(dest => dest.EndMargin, opt => opt.MapFrom(src => ConvertirHoras.AgregarMinutos(src.EndMargin,src.PeriodStart)))
+                .ForMember(dest=>dest.LateIn, opt => opt.MapFrom(src => src.LateIn))
+                .ForMember(dest=>dest.MinEarlyIn, opt => opt.MapFrom(src => src.MinEarlyIn))
+                .ForMember(dest=>dest.MinLateIn, opt => opt.MapFrom(src => src.MinLateIn))
+                ;
+
 
         }
         private string GetWorkType(int workType)

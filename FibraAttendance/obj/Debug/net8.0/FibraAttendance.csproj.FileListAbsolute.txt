@@ -173,3 +173,6 @@ C:\fibrafil_attendance\App_Attendance_Fibra\FibraAttendance\FibraAttendance\obj\
 C:\fibrafil_attendance\App_Attendance_Fibra\FibraAttendance\FibraAttendance\bin\Debug\net8.0\AutoMapper.dll
 C:\fibrafil_attendance\App_Attendance_Fibra\FibraAttendance\FibraAttendance\bin\Debug\net8.0\FibraAttendance.Infrastructure.dll
 C:\fibrafil_attendance\App_Attendance_Fibra\FibraAttendance\FibraAttendance\bin\Debug\net8.0\FibraAttendance.Infrastructure.pdb
+C:\fibrafil_attendance\App_Attendance_Fibra\FibraAttendance\FibraAttendance\obj\Debug\net8.0\FibraAttendance.sourcelink.json
+C:\fibrafil_attendance\App_Attendance_Fibra\FibraAttendance\FibraAttendance\bin\Debug\net8.0\Entities.dll
+C:\fibrafil_attendance\App_Attendance_Fibra\FibraAttendance\FibraAttendance\bin\Debug\net8.0\Entities.pdb

@@ -4,6 +4,7 @@ using FibraAttendance.Infrastructure.Service;
 using FibraAttendance.Mappers;
 using FibraAttendance.Service;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +31,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
            );
 
+builder.Services.AddDbContext<DBScireContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ScireDB"))
+           );
+
 builder.Services.AddHostedService<ZkPollingService>();
 
 builder.Services.AddScoped<IZktecoService, ZktecoDeviceService>();
@@ -50,7 +55,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors("AllowAnyOrigin");
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
