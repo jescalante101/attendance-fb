@@ -55,6 +55,10 @@ public partial class AttManuallog
     [Column("temperature", TypeName = "numeric(4, 1)")]
     public decimal? Temperature { get; set; }
 
+    [Column("nro_doc")]
+    [StringLength(20)]
+    public string? NroDoc { get; set; }
+
     [ForeignKey("AbstractexceptionPtrId")]
     [InverseProperty("AttManuallog")]
     public virtual WorkflowAbstractexception AbstractexceptionPtr { get; set; } = null!;

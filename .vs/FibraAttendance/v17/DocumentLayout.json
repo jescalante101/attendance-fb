@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\fibrafil_attendance\\App_Attendance_Fibra\\FibraAttendance\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C40CFC0-3235-490B-8B16-4161F97A8482}|FibraAttendance\\FibraAttendance.csproj|c:\\fibrafil_attendance\\app_attendance_fibra\\fibraattendance\\fibraattendance\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C40CFC0-3235-490B-8B16-4161F97A8482}|FibraAttendance\\FibraAttendance.csproj|solutionrelative:fibraattendance\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC03ECCE-0CD7-425B-85BC-31686D1D7839}|Entities\\Entities.csproj|c:\\fibrafil_attendance\\app_attendance_fibra\\fibraattendance\\entities\\dto\\employeescheduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC03ECCE-0CD7-425B-85BC-31686D1D7839}|Entities\\Entities.csproj|solutionrelative:entities\\dto\\employeescheduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C40CFC0-3235-490B-8B16-4161F97A8482}|FibraAttendance\\FibraAttendance.csproj|c:\\fibrafil_attendance\\app_attendance_fibra\\fibraattendance\\fibraattendance\\controllers\\shiftcontroller\\shiftcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C40CFC0-3235-490B-8B16-4161F97A8482}|FibraAttendance\\FibraAttendance.csproj|solutionrelative:fibraattendance\\controllers\\shiftcontroller\\shiftcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C40CFC0-3235-490B-8B16-4161F97A8482}|FibraAttendance\\FibraAttendance.csproj|c:\\fibrafil_attendance\\app_attendance_fibra\\fibraattendance\\fibraattendance\\controllers\\terminalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C40CFC0-3235-490B-8B16-4161F97A8482}|FibraAttendance\\FibraAttendance.csproj|solutionrelative:fibraattendance\\controllers\\terminalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C40CFC0-3235-490B-8B16-4161F97A8482}|FibraAttendance\\FibraAttendance.csproj|c:\\fibrafil_attendance\\app_attendance_fibra\\fibraattendance\\fibraattendance\\controllers\\attmanuallogcontroller\\attmanuallogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C40CFC0-3235-490B-8B16-4161F97A8482}|FibraAttendance\\FibraAttendance.csproj|solutionrelative:fibraattendance\\controllers\\attmanuallogcontroller\\attmanuallogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,53 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AttendanceController.cs",
-              "DocumentMoniker": "C:\\fibrafil_attendance\\App_Attendance_Fibra\\FibraAttendance\\FibraAttendance\\Controllers\\AttendanceController.cs",
-              "RelativeDocumentMoniker": "FibraAttendance\\Controllers\\AttendanceController.cs",
-              "ToolTip": "C:\\fibrafil_attendance\\App_Attendance_Fibra\\FibraAttendance\\FibraAttendance\\Controllers\\AttendanceController.cs",
-              "RelativeToolTip": "FibraAttendance\\Controllers\\AttendanceController.cs",
-              "ViewState": "AgIAAM0AAAAAAAAAAAAUwOsAAABPAAAAAAAAAA==",
+              "Title": "AttManualLogController.cs",
+              "DocumentMoniker": "C:\\fibrafil_attendance\\App_Attendance_Fibra\\FibraAttendance\\FibraAttendance\\Controllers\\AttManualLogController\\AttManualLogController.cs",
+              "RelativeDocumentMoniker": "FibraAttendance\\Controllers\\AttManualLogController\\AttManualLogController.cs",
+              "ToolTip": "C:\\fibrafil_attendance\\App_Attendance_Fibra\\FibraAttendance\\FibraAttendance\\Controllers\\AttManualLogController\\AttManualLogController.cs",
+              "RelativeToolTip": "FibraAttendance\\Controllers\\AttManualLogController\\AttManualLogController.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAswEIAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T16:34:04.882Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EmployeeScheduleDto.cs",
-              "DocumentMoniker": "C:\\fibrafil_attendance\\App_Attendance_Fibra\\FibraAttendance\\Entities\\DTO\\EmployeeScheduleDto.cs",
-              "RelativeDocumentMoniker": "Entities\\DTO\\EmployeeScheduleDto.cs",
-              "ToolTip": "C:\\fibrafil_attendance\\App_Attendance_Fibra\\FibraAttendance\\Entities\\DTO\\EmployeeScheduleDto.cs",
-              "RelativeToolTip": "Entities\\DTO\\EmployeeScheduleDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T15:52:05.157Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ShiftController.cs",
-              "DocumentMoniker": "C:\\fibrafil_attendance\\App_Attendance_Fibra\\FibraAttendance\\FibraAttendance\\Controllers\\ShiftController\\ShiftController.cs",
-              "RelativeDocumentMoniker": "FibraAttendance\\Controllers\\ShiftController\\ShiftController.cs",
-              "ToolTip": "C:\\fibrafil_attendance\\App_Attendance_Fibra\\FibraAttendance\\FibraAttendance\\Controllers\\ShiftController\\ShiftController.cs",
-              "RelativeToolTip": "FibraAttendance\\Controllers\\ShiftController\\ShiftController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwCwAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T15:48:04.71Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TerminalController.cs",
-              "DocumentMoniker": "C:\\fibrafil_attendance\\App_Attendance_Fibra\\FibraAttendance\\FibraAttendance\\Controllers\\TerminalController.cs",
-              "RelativeDocumentMoniker": "FibraAttendance\\Controllers\\TerminalController.cs",
-              "ToolTip": "C:\\fibrafil_attendance\\App_Attendance_Fibra\\FibraAttendance\\FibraAttendance\\Controllers\\TerminalController.cs",
-              "RelativeToolTip": "FibraAttendance\\Controllers\\TerminalController.cs",
-              "ViewState": "AgIAAJUAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T15:47:17.773Z",
+              "WhenOpened": "2025-07-14T22:48:01.108Z",
               "EditorCaption": ""
             }
           ]
