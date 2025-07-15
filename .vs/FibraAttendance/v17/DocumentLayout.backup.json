@@ -1,10 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\fibrafil_attendance\\App_Attendance_Fibra\\FibraAttendance\\",
+  "WorkspaceRootPath": "C:\\proyects\\BACKENDS\\attendance-fb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C40CFC0-3235-490B-8B16-4161F97A8482}|FibraAttendance\\FibraAttendance.csproj|c:\\fibrafil_attendance\\app_attendance_fibra\\fibraattendance\\fibraattendance\\controllers\\attmanuallogcontroller\\attmanuallogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C40CFC0-3235-490B-8B16-4161F97A8482}|FibraAttendance\\FibraAttendance.csproj|c:\\proyects\\backends\\attendance-fb\\fibraattendance\\controllers\\attmanuallogcontroller\\attmanuallogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C40CFC0-3235-490B-8B16-4161F97A8482}|FibraAttendance\\FibraAttendance.csproj|solutionrelative:fibraattendance\\controllers\\attmanuallogcontroller\\attmanuallogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC03ECCE-0CD7-425B-85BC-31686D1D7839}|Entities\\Entities.csproj|c:\\proyects\\backends\\attendance-fb\\entities\\dto\\attmanuallog\\attmanuallogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC03ECCE-0CD7-425B-85BC-31686D1D7839}|Entities\\Entities.csproj|solutionrelative:entities\\dto\\attmanuallog\\attmanuallogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C40CFC0-3235-490B-8B16-4161F97A8482}|FibraAttendance\\FibraAttendance.csproj|c:\\proyects\\backends\\attendance-fb\\fibraattendance\\models\\workflowabstractexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C40CFC0-3235-490B-8B16-4161F97A8482}|FibraAttendance\\FibraAttendance.csproj|solutionrelative:fibraattendance\\models\\workflowabstractexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C40CFC0-3235-490B-8B16-4161F97A8482}|FibraAttendance\\FibraAttendance.csproj|c:\\proyects\\backends\\attendance-fb\\fibraattendance\\models\\attmanuallog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C40CFC0-3235-490B-8B16-4161F97A8482}|FibraAttendance\\FibraAttendance.csproj|solutionrelative:fibraattendance\\models\\attmanuallog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC03ECCE-0CD7-425B-85BC-31686D1D7839}|Entities\\Entities.csproj|c:\\proyects\\backends\\attendance-fb\\entities\\dto\\attmanuallog\\attmanuallogcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC03ECCE-0CD7-425B-85BC-31686D1D7839}|Entities\\Entities.csproj|solutionrelative:entities\\dto\\attmanuallog\\attmanuallogcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,21 +30,77 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AttManuallogDto.cs",
+              "DocumentMoniker": "C:\\proyects\\BACKENDS\\attendance-fb\\Entities\\DTO\\AttManualLog\\AttManuallogDto.cs",
+              "RelativeDocumentMoniker": "Entities\\DTO\\AttManualLog\\AttManuallogDto.cs",
+              "ToolTip": "C:\\proyects\\BACKENDS\\attendance-fb\\Entities\\DTO\\AttManualLog\\AttManuallogDto.cs",
+              "RelativeToolTip": "Entities\\DTO\\AttManualLog\\AttManuallogDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T01:33:19.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AttManuallogCreateDto.cs",
+              "DocumentMoniker": "C:\\proyects\\BACKENDS\\attendance-fb\\Entities\\DTO\\AttManualLog\\AttManuallogCreateDto.cs",
+              "RelativeDocumentMoniker": "Entities\\DTO\\AttManualLog\\AttManuallogCreateDto.cs",
+              "ToolTip": "C:\\proyects\\BACKENDS\\attendance-fb\\Entities\\DTO\\AttManualLog\\AttManuallogCreateDto.cs",
+              "RelativeToolTip": "Entities\\DTO\\AttManualLog\\AttManuallogCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T01:33:16.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WorkflowAbstractexception.cs",
+              "DocumentMoniker": "C:\\proyects\\BACKENDS\\attendance-fb\\FibraAttendance\\Models\\WorkflowAbstractexception.cs",
+              "RelativeDocumentMoniker": "FibraAttendance\\Models\\WorkflowAbstractexception.cs",
+              "ToolTip": "C:\\proyects\\BACKENDS\\attendance-fb\\FibraAttendance\\Models\\WorkflowAbstractexception.cs",
+              "RelativeToolTip": "FibraAttendance\\Models\\WorkflowAbstractexception.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T01:20:30.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AttManuallog.cs",
+              "DocumentMoniker": "C:\\proyects\\BACKENDS\\attendance-fb\\FibraAttendance\\Models\\AttManuallog.cs",
+              "RelativeDocumentMoniker": "FibraAttendance\\Models\\AttManuallog.cs",
+              "ToolTip": "C:\\proyects\\BACKENDS\\attendance-fb\\FibraAttendance\\Models\\AttManuallog.cs",
+              "RelativeToolTip": "FibraAttendance\\Models\\AttManuallog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T01:15:31.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "AttManualLogController.cs",
-              "DocumentMoniker": "C:\\fibrafil_attendance\\App_Attendance_Fibra\\FibraAttendance\\FibraAttendance\\Controllers\\AttManualLogController\\AttManualLogController.cs",
+              "DocumentMoniker": "C:\\proyects\\BACKENDS\\attendance-fb\\FibraAttendance\\Controllers\\AttManualLogController\\AttManualLogController.cs",
               "RelativeDocumentMoniker": "FibraAttendance\\Controllers\\AttManualLogController\\AttManualLogController.cs",
-              "ToolTip": "C:\\fibrafil_attendance\\App_Attendance_Fibra\\FibraAttendance\\FibraAttendance\\Controllers\\AttManualLogController\\AttManualLogController.cs*",
+              "ToolTip": "C:\\proyects\\BACKENDS\\attendance-fb\\FibraAttendance\\Controllers\\AttManualLogController\\AttManualLogController.cs*",
               "RelativeToolTip": "FibraAttendance\\Controllers\\AttManualLogController\\AttManualLogController.cs*",
-              "ViewState": "AgIAADcAAAAAAAAAAAAowIgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAkwDoAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-14T22:48:01.108Z",
               "EditorCaption": ""

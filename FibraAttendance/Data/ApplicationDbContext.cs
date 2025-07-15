@@ -529,18 +529,23 @@ public partial class ApplicationDbContext : DbContext
 
         modelBuilder.Entity<AttManuallog>(entity =>
         {
-            entity.HasKey(e => e.AbstractexceptionPtrId).HasName("PK__att_manu__8D9209C97E1ADA60");
+            //entity.HasKey(e => e.AbstractexceptionPtrId).HasName("PK__att_manu__8D9209C97E1ADA60");
+            entity.HasKey(x=>x.ManuallogId);
+             
 
-            entity.Property(e => e.AbstractexceptionPtrId).ValueGeneratedNever();
+            //entity.Property(e => e.AbstractexceptionPtrId).ValueGeneratedNever();
 
-            entity.HasOne(d => d.AbstractexceptionPtr).WithOne(p => p.AttManuallog)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("att_manuallog_abstractexception_ptr_id_f1e1b292_fk_workflow_abstractexception_id");
+            //entity.HasOne(d => d.AbstractexceptionPtr).WithOne(p => p.AttManuallog)
+            //    .OnDelete(DeleteBehavior.ClientSetNull)
+            //    .HasConstraintName("att_manuallog_abstractexception_ptr_id_f1e1b292_fk_workflow_abstractexception_id");
 
-            entity.HasOne(d => d.Employee).WithMany(p => p.AttManuallogs)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("att_manuallog_employee_id_dc8cc2ad_fk_personnel_employee_id");
+            //entity.HasOne(d => d.Employee).WithMany(p => p.AttManuallogs)
+            //    .OnDelete(DeleteBehavior.ClientSetNull)
+            //    .HasConstraintName("att_manuallog_employee_id_dc8cc2ad_fk_personnel_employee_id");
         });
+        modelBuilder.Entity<AttManuallog>()
+        .Property(e => e.AbstractexceptionPtrId)
+        .HasColumnName("abstractexception_ptr_id");
 
         modelBuilder.Entity<AttOvertime>(entity =>
         {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GlkgOpWE9LE=",
+  "dgSpecHash": "4AWTlqUMgkE=",
   "success": true,
-  "projectFilePath": "C:\\fibrafil_attendance\\App_Attendance_Fibra\\FibraAttendance\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\proyects\\BACKENDS\\attendance-fb\\Entities\\Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -25,8 +25,8 @@ public partial class WorkflowAbstractexception
     [InverseProperty("AbstractexceptionPtr")]
     public virtual AttLeave? AttLeave { get; set; }
 
-    [InverseProperty("AbstractexceptionPtr")]
-    public virtual AttManuallog? AttManuallog { get; set; }
+    //[InverseProperty("AbstractexceptionPtr")]
+    //public virtual AttManuallog? AttManuallog { get; set; }
 
     [InverseProperty("AbstractexceptionPtr")]
     public virtual AttOvertime? AttOvertime { get; set; }

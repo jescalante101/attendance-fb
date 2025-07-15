@@ -39,6 +39,7 @@ namespace FibraAttendance.Controllers.AttManualLogController
                 .Take(pageSize)
                 .Select(x => new AttManuallogDto
                 {
+                    ManualLogId= x.ManuallogId,
                     AbstractexceptionPtrId = x.AbstractexceptionPtrId,
                     PunchTime = x.PunchTime,
                     PunchState = x.PunchState,
@@ -54,7 +55,8 @@ namespace FibraAttendance.Controllers.AttManualLogController
                     IsMask = x.IsMask,
                     Temperature = x.Temperature,
                     NroDoc = x.NroDoc
-                })
+                }).
+                OrderByDescending(x=>x.PunchTime)
                 .ToListAsync();
 
             var paginated = new PaginatedList<AttManuallogDto>(items, totalItems, page, pageSize);
@@ -103,6 +105,7 @@ namespace FibraAttendance.Controllers.AttManualLogController
             // Mapear la lista de entidades insertadas a DTOs para devolver
             var resultDtos = entities.Select(entity => new AttManuallogDto
             {
+                ManualLogId = entity.ManuallogId,
                 AbstractexceptionPtrId = entity.AbstractexceptionPtrId,
                 PunchTime = entity.PunchTime,
                 PunchState = entity.PunchState,
@@ -171,6 +174,7 @@ namespace FibraAttendance.Controllers.AttManualLogController
 
             var resultDto = new AttManuallogDto
             {
+                ManualLogId = entity.ManuallogId,
                 AbstractexceptionPtrId = entity.AbstractexceptionPtrId,
                 PunchTime = entity.PunchTime,
                 PunchState = entity.PunchState,
@@ -222,6 +226,7 @@ namespace FibraAttendance.Controllers.AttManualLogController
 
             var resultDto = new AttManuallogDto
             {
+                ManualLogId = entity.ManuallogId,
                 AbstractexceptionPtrId = entity.AbstractexceptionPtrId,
                 PunchTime = entity.PunchTime,
                 PunchState = entity.PunchState,

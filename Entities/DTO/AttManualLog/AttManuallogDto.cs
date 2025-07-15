@@ -8,6 +8,7 @@ namespace Entities.DTO.AttManualLog
 {
     public class AttManuallogDto
     {
+        public int ManualLogId { get; set; }
         public int AbstractexceptionPtrId { get; set; }
         public DateTime PunchTime { get; set; }
         public int PunchState { get; set; }

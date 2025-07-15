@@ -1,0 +1,8 @@
+C:\proyects\BACKENDS\attendance-fb\FibraAttendance.Infrastructure\obj\Debug\net48\FibraAttendance.Infrastructure.csproj.AssemblyReference.cache
+C:\proyects\BACKENDS\attendance-fb\FibraAttendance.Infrastructure\obj\Debug\net48\Interop.zkemkeeper.dll
+C:\proyects\BACKENDS\attendance-fb\FibraAttendance.Infrastructure\obj\Debug\net48\FibraAttendance.Infrastructure.csproj.ResolveComReference.cache
+C:\proyects\BACKENDS\attendance-fb\FibraAttendance.Infrastructure\obj\Debug\net48\FibraAttendance.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\proyects\BACKENDS\attendance-fb\FibraAttendance.Infrastructure\obj\Debug\net48\FibraAttendance.Infrastructure.AssemblyInfoInputs.cache
+C:\proyects\BACKENDS\attendance-fb\FibraAttendance.Infrastructure\obj\Debug\net48\FibraAttendance.Infrastructure.AssemblyInfo.cs
+C:\proyects\BACKENDS\attendance-fb\FibraAttendance.Infrastructure\obj\Debug\net48\FibraAttendance.Infrastructure.csproj.CoreCompileInputs.cache
+C:\proyects\BACKENDS\attendance-fb\FibraAttendance.Infrastructure\obj\Debug\net48\FibraAttendance.Infrastructure.sourcelink.json

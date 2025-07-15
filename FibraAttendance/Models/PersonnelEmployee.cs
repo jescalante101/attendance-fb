@@ -209,8 +209,8 @@ public partial class PersonnelEmployee
     [InverseProperty("Employee")]
     public virtual ICollection<AttLeave> AttLeaves { get; set; } = new List<AttLeave>();
 
-    [InverseProperty("Employee")]
-    public virtual ICollection<AttManuallog> AttManuallogs { get; set; } = new List<AttManuallog>();
+    //[InverseProperty("Employee")]
+    //public virtual ICollection<AttManuallog> AttManuallogs { get; set; } = new List<AttManuallog>();
 
     [InverseProperty("Employee")]
     public virtual ICollection<AttOvertime> AttOvertimes { get; set; } = new List<AttOvertime>();

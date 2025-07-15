@@ -4144,86 +4144,6 @@
         },
         "additionalProperties": false
       },
-      "AttManuallog": {
-        "type": "object",
-        "properties": {
-          "abstractexceptionPtrId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "punchTime": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "punchState": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "workCode": {
-            "maxLength": 20,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
-          },
-          "applyReason": {
-            "type": "string",
-            "nullable": true
-          },
-          "applyTime": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "auditReason": {
-            "type": "string",
-            "nullable": true
-          },
-          "auditTime": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "approvalLevel": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "auditUserId": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "approver": {
-            "maxLength": 50,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
-          },
-          "employeeId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "isMask": {
-            "type": "boolean"
-          },
-          "temperature": {
-            "type": "number",
-            "format": "double",
-            "nullable": true
-          },
-          "nroDoc": {
-            "maxLength": 20,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
-          },
-          "abstractexceptionPtr": {
-            "$ref": "#/components/schemas/WorkflowAbstractexception"
-          },
-          "employee": {
-            "$ref": "#/components/schemas/PersonnelEmployee"
-          }
-        },
-        "additionalProperties": false
-      },
       "AttManuallogCreateDto": {
         "type": "object",
         "properties": {
@@ -4291,6 +4211,10 @@
       "AttManuallogDto": {
         "type": "object",
         "properties": {
+          "manualLogId": {
+            "type": "integer",
+            "format": "int32"
+          },
           "abstractexceptionPtrId": {
             "type": "integer",
             "format": "int32"
@@ -9803,13 +9727,6 @@
             },
             "nullable": true
           },
-          "attManuallogs": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/AttManuallog"
-            },
-            "nullable": true
-          },
           "attOvertimes": {
             "type": "array",
             "items": {
@@ -10626,9 +10543,6 @@
           },
           "attLeave": {
             "$ref": "#/components/schemas/AttLeave"
-          },
-          "attManuallog": {
-            "$ref": "#/components/schemas/AttManuallog"
           },
           "attOvertime": {
             "$ref": "#/components/schemas/AttOvertime"

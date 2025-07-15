@@ -7,10 +7,13 @@ using Microsoft.EntityFrameworkCore;
 namespace FibraAttendance.Models;
 
 [Table("att_manuallog")]
-[Index("EmployeeId", Name = "att_manuallog_employee_id_dc8cc2ad")]
 public partial class AttManuallog
 {
+
     [Key]
+    [Column("manuallog_id")]
+    public int ManuallogId { get; set; }
+
     [Column("abstractexception_ptr_id")]
     public int AbstractexceptionPtrId { get; set; }
 
@@ -59,11 +62,11 @@ public partial class AttManuallog
     [StringLength(20)]
     public string? NroDoc { get; set; }
 
-    [ForeignKey("AbstractexceptionPtrId")]
-    [InverseProperty("AttManuallog")]
-    public virtual WorkflowAbstractexception AbstractexceptionPtr { get; set; } = null!;
+    //[ForeignKey("AbstractexceptionPtrId")]
+    //[InverseProperty("AttManuallog")]
+    //public virtual WorkflowAbstractexception AbstractexceptionPtr { get; set; } = null!;
 
-    [ForeignKey("EmployeeId")]
-    [InverseProperty("AttManuallogs")]
-    public virtual PersonnelEmployee Employee { get; set; } = null!;
+    //[ForeignKey("EmployeeId")]
+    //[InverseProperty("AttManuallogs")]
+    //public virtual PersonnelEmployee Employee { get; set; } = null!;
 }
